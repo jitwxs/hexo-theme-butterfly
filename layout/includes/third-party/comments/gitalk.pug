@@ -8,13 +8,14 @@ script.
 
   function loadGitalk () {
     function initGitalk () {
+      let id = md5(decodeURI(window.location.pathname));
       var gitalk = new Gitalk({
         clientID: '!{theme.gitalk.client_id}',
         clientSecret: '!{theme.gitalk.client_secret}',
         repo: '!{theme.gitalk.repo}',
         owner: '!{theme.gitalk.owner}',
         admin: ['!{theme.gitalk.admin}'],
-        id: '!{md5(page.path)}',
+        id: id,
         language: '!{theme.gitalk.language}',
         perPage: !{theme.gitalk.perPage},
         distractionFreeMode: !{theme.gitalk.distractionFreeMode},
