@@ -1,0 +1,76 @@
+#article-container
+  div.timenode
+    position: relative
+    &:before, &:after
+      content: ''
+      z-index: 1
+      position: absolute
+      background: alpha($theme-color, .5)
+      width: 2px
+      left: 7px
+    &:before
+      top: 0px
+      height: 6px
+    &:after
+      top: 26px
+      height: "calc(100% - %s)" % 26px
+    &:last-child
+      &:after
+        height: "calc(100% - 26px - %s)" % $rem
+        border-bottom-left-radius: 2px
+        border-bottom-right-radius: 2px
+    .meta,.body
+      max-width: "calc(100% - %s)" % (16px + 8px)
+    .meta
+      position: relative
+      color: var(--font-black)
+      font-size: $font-size
+      line-height: 32px
+      height: 32px
+      &:before, &:after
+        content: ''
+        position: absolute
+        top: 8px
+        z-index: 2
+      &:before
+        background: alpha($theme-color, .5)
+        width: 16px
+        height: 16px
+        border-radius: 8px
+      &:after
+        background: $theme-color
+        margin-left: 2px
+        margin-top: 2px
+        width: 12px
+        height: 12px
+        border-radius: 6px
+        transform: scale(0.5)
+        trans()
+      p
+        font-weight: bold
+        margin: 0 0 0 16px + 8px
+    .body
+      margin: 4px 0 $rem 16px + 8px
+      padding: $rem
+      border-radius: 8px
+      background: #f6f6f6
+      display: inline-block
+      &:empty
+        display: none
+      >*
+        &:first-child
+          margin-top: $rem * 0.25
+        &:last-child
+          margin-bottom: $rem * 0.25
+      .highlight
+        border: 1px solid mix($bright-blue, $font-color, 90)
+
+
+  div.timenode:hover
+    .meta
+      color: var(--font-color)
+      &:before
+        background: alpha($light-orange, .5)
+      &:after
+        background: $light-orange
+        transform: scale(1)
