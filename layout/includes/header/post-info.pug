@@ -3,6 +3,11 @@
     
   #post-meta
     .meta-firstline
+      if (theme.post_meta.post.copyright_author)
+        span.article-meta
+          i.fas.fa-user.post-meta-icon
+          span.article-meta-label= _p(page.copyright_author)
+          span.post-meta-separator |
       if (theme.post_meta.post.date_type)
         span.post-meta-date
           if (theme.post_meta.post.date_type === 'both')

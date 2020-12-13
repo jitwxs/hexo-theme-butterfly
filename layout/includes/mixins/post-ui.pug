@@ -21,6 +21,11 @@ mixin postUI(posts)
               i.fas.fa-thumbtack.article-meta__icon.sticky
               span.sticky= _p('sticky')
               span.article-meta__separator |
+          if (theme.post_meta.page.copyright_author)
+            span.article-meta
+              i.fas.fa-user.article-meta__icon
+              span.article-meta-label= _p(article.copyright_author)
+              span.article-meta__separator |
           if (theme.post_meta.page.date_type)
             span.post-meta-date
               if (theme.post_meta.page.date_type === 'both')               
