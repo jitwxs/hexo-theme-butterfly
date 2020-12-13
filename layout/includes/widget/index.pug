@@ -7,8 +7,10 @@
     if is_post()
       if showToc
         include ./card_post_toc.pug
-      if theme.aside.card_recent_post.enable
-        !=partial('includes/widget/card_recent_post', {}, {cache:theme.fragment_cache})
+      if theme.aside.card_post_references.enable
+        include ./card_post_references.pug
+      if theme.aside.card_post_related_repos.enable
+        include ./card_post_related_repos.pug
       if theme.ad && theme.ad.aside
         !=partial('includes/widget/card_ad', {}, {cache:theme.fragment_cache})
     else

@@ -667,6 +667,10 @@ aside:
     enable: true
     post_count: true
     last_push_date: true
+  card_post_references:
+    enable: true
+  card_post_related_repos:
+    enable: true
 
 # busuanzi count for PV / UV in site
 # 訪問人數

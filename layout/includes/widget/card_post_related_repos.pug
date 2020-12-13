@@ -1,0 +1,21 @@
+if page.related_repos
+  .card-widget.card-post-link
+    .card-content
+      .item-headline
+        i.fab.fa-github
+        span= _p('源码')
+      .aside-list
+        each item, index in page.related_repos
+          - let link = item.url
+          - let title = item.name
+          - let no_cover = item.cover === false || !theme.cover.aside_enable ? 'no-cover' : ''
+          - let post_cover = item.cover
+          .aside-list-item(class=no_cover)
+            if post_cover && theme.cover.aside_enable
+              a.thumbnail(href=url_for(link) title=title)
+                if theme.lazyload.enable
+                  img(data-lazy-src=url_for(post_cover) onerror=`this.onerror=null;this.src='${url_for(theme.error_img.post_page)}'` alt=title)
+                else
+                  img(src=url_for(post_cover) onerror=`this.onerror=null;this.src='${url_for(theme.error_img.post_page)}'` alt=title)
+            .content
+              a.title(href=url_for(link) title=title)= title
