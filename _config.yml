@@ -13,7 +13,10 @@ menu:
   分类: /categories/ || fas fa-folder-open
   友链: /links/ || fas fa-link
   关于: /about/ || fas fa-heart
-  站点管理||fa fas fa-ellipsis-v:
+  更多||fa fas fa-ellipsis-v:
+    - 书籍 || /books/ || fa fa-book
+    - 工具箱 || https://tools.jitwxs.cn || fas fa-tools
+  管理||fas fa-cogs:
     - 更新日志 || /changes/ || fas fa-location-arrow
     - 谷歌统计 || https://analytics.google.com/ || fab fa-google
     - 百度统计 || https://tongji.baidu.com/ || fas fa-globe-asia
@@ -852,7 +855,7 @@ inject:
   head:
     # - <link rel="stylesheet" href="">
   bottom:
-    - <div class="aplayer no-destroy" data-id="5273081683" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" muted></div>
+    - <div class="aplayer no-destroy" data-id="5273081683" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="none" data-autoplay="true" data-lrctype="1" muted></div>
 
 # CDN
 # Don't modify the following settings unless you know how they work

@@ -1,6 +1,7 @@
+- let flink_data = site.data[page.type]
 .flink#article-container
-  if site.data.link
-    each i in site.data.link
+  if flink_data
+    each i in flink_data
       if i.class_name
         h2!= i.class_name
       if i.class_desc
