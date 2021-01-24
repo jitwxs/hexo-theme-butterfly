@@ -15,6 +15,7 @@ menu:
   关于: /about/ || fas fa-heart
   更多||fa fas fa-ellipsis-v:
     - 书籍 || /books/ || fa fa-book
+    - 收藏夹 || /favorites/ || fas fa-meteor
     - 工具箱 || https://tools.jitwxs.cn || fas fa-tools
   管理||fas fa-cogs:
     - 更新日志 || /changes/ || fas fa-location-arrow
