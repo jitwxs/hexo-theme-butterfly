@@ -3,8 +3,8 @@
     h1.page-title= page.title
 
   .flink
-    if site.data.link
-      each i in site.data.link
+    if site.data[page.type]
+      each i in site.data[page.type]
         if i.class_name
           h2!= i.class_name
         if i.class_desc
