@@ -461,7 +461,7 @@ baidu_analytics: 053091e29f160d71ed2f65a774cfeac1
 
 # Google Analytics
 # https://analytics.google.com/analytics/web/
-google_analytics: UA-133223703-1
+google_analytics: G-40VH67TNSM
 
 # Tencent Analytics ID
 # https://mta.qq.com
@@ -605,7 +605,7 @@ activate_power_mode:
 
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
 fireworks:
-  enable: true
+  enable: false
   zIndex: 9999 # -1 or 9999
   mobile: false
 
@@ -631,7 +631,7 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: true
+  enable: false
   field: post # site/post
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: '#F47466'
