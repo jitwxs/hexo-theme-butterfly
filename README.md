@@ -1,13 +1,8 @@
-# Fork Version
-
-本 Fork 仓库基于 [hexo-theme-butterfly](https://github.com/jerryc127/hexo-theme-butterfly) 项目二次开发，在原有基础上新增了以下功能：
-
-- post_meta 增加原文作者展示
-- 实现自定义页面复用`友情链接`页面的 UI
-- gitalk 唯一 ID 改用 md5 生成
-- 文章增加`参考资料`、`源码` 侧边栏
-- 关闭 toc_number
-- 增加 timeLine 样式
+<div align="right">
+  Language:
+  🇺🇸
+  <a title="Chinese" href="/README_CN.md">🇨🇳</a>
+</div>
 
 # hexo-theme-butterfly
 
@@ -19,89 +14,90 @@
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/theme-butterfly-readme.png)
 
-預覽: 👍 [Butterfly](https://butterfly.js.org/)  ||  🤞 [MYW](https://immyw.com/)
+Demo: 👍 [Butterfly](https://butterfly.js.org/)  ||   🤞 [MYW](https://immyw.com/)
 
-文檔: 📖 [Butterfly Docs](https://butterfly.js.org/posts/21cfbf15/)
+Docs: 📖 [Butterfly Docs](https://butterfly.js.org/posts/21cfbf15/)
 
-一款基於[hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody)修改的主題
+Based on [hexo-theme-melody](https://github.com/Molunerfinn/hexo-theme-melody) theme.
 
-## 安裝
+## Installation
 
-### Git 安裝
+### GIT
 
-> 本倉庫同時上傳到 [Gitee](https://gitee.com/iamjerryw/hexo-theme-butterfly)，如果你訪問 Github 緩慢，可從 Gitee 中下載。
+> If you are in Mainland China, you can download in [Gitee](https://gitee.com/iamjerryw/hexo-theme-butterfly)
 
-在博客根目錄裡安裝穩定版【推薦】
+Stable branch [recommend]:
 
-```powershell
+```
 git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
 ```
 
-如果想要安裝比較新的dev分支，可以
+Dev branch:
 
-```powershell
+```
 git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
 ```
 
-### npm 安裝
+### NPM
 
-> 此方法只支持Hexo 5.0.0以上版本
+> It supports Hexo 5.0.0 or later
 
-在博客根目錄裡
+In Hexo site root directory
 
 ```powershell
 npm i hexo-theme-butterfly
 ```
 
-## 應用主題
-修改hexo配置文件`_config.yml`，把主題改為`Butterfly`
+## Configuration
 
-```
-theme: butterfly
-```
+Set theme in the hexo work folder's root config file `_config.yml`:
 
->如果你沒有pug以及stylus的渲染器，請下載安裝： npm install hexo-renderer-pug hexo-renderer-stylus --save
+> theme: butterfly
 
-## 特色
+If you don't have pug & stylus renderer, try this:
 
-- [x] 卡片化設計
-- [X] 支持二級目錄
-- [x] 雙欄設計
-- [x] 響應式主題
-- [x] 夜間模式
+> npm install hexo-renderer-pug hexo-renderer-stylus
+
+## Features
+
+- [x] Card UI Design
+- [X] Support sub-menu
+- [x] Two Column designs
+- [x] Responsive Web Design
+- [x] Dark Mode
 - [x] Pjax
-- [x] 文章閲讀模式
-- [x] 簡體和繁體轉換
-- [X] 電腦和手機都可查看TOC目錄
-- [X] 內置多種代碼配色（darker/pale night/light/ocean/mac/mac light），可自定義代碼配色
-- [X] 代碼塊顯示代碼語言/關閉或展開代碼塊/代碼複製/代碼自動換行
-- [X] 可關閉文字複製/可開啟內容複製增加版權信息）
-- [X] 兩種搜索（Algolia搜索和本地搜索）
-- [x] Mathjax 和 Katex
-- [x] 內置404頁面
-- [x] 顯示字數統計
-- [x] 顯示相關文章
-- [x] 過期文章提醒
-- [x] 多種分享系統（AddThis/Sharejs/Addtoany）
-- [X] 多種評論系統（Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo）
-- [x] 支持雙評論部署
-- [x] 多種在線聊天（Chatra/Tidio/Daovoice/Gitter/Crisp）
-- [x] 多種分析系統
-- [x] 谷歌廣告/手動廣告位置
-- [x] 各種站長驗證（Google/Bing/Baidu/360/Yandex）
-- [x] 修改網站配色
-- [x] 打字特效 activate_power_mode
-- [x] 多種背景特效（靜止彩帶/動態彩帶/Canvas Nest）
-- [x] 多種鼠標點擊特效（煙花/文字/愛心）
-- [x] 內置一種 Preloader 加載動畫
-- [x] 不蒜子訪問統計
-- [x] 兩種大圖模式（Medium Zoom/Fancybox）
-- [x] Mermaid 圖表顯示
-- [x] 照片牆
-- [x] 圖片懶加載
-- [x] Instantpage/Pangu/Snackbar彈窗/PWA......
+- [x] Read Mode
+- [x] Conversion between Traditional and Simplified Chinese
+- [X] TOC catalog is available for both computers and mobile phones
+- [X] Color themes (darker/pale night/light/ocean/mac/mac light), support custom colors
+- [X] Code Blocks (Display code language/close or expand Code Blocks/Copy Button/word wrap)
+- [X] Disable copy/Add a Copyright Notice to the Copied Text
+- [X] Search (Algolia SearchZ/Local Search)
+- [x] Mathjax and Katex
+- [x] Built-in 404 page
+- [x] WordCount
+- [x] Related articles
+- [x] Displays outdated notice for a post
+- [x] Share (AddThis/Sharejs/Addtoany)
+- [X] Comment (Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo)
+- [x] Multiple Comment System Support
+- [x] Online Chats (Chatra/Tidio/Daovoice/Gitter/Crisp)
+- [x] Web analytics
+- [x] Google AdSense
+- [x] Webmaster Verification
+- [x] Change website colour scheme
+- [x] Typewriter Effect: activate_power_mode
+- [x] Background effects (Canvas ribbon/canvas_ribbon_piao/canvas_nest)
+- [x] Mouse click effects (Fireworks/Heart/Text)
+- [x] Preloader/Loading Animation
+- [x] Busuanzi visitor counter
+- [x] Medium Zoom/Fancybox
+- [x] Mermaid
+- [x] Justified Gallery
+- [x] Lazyload images
+- [x] Instantpage/Pangu/Snackbar notification toast/PWA......
 
-## 截圖
+## Screenshots
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-1.jpg)
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN@m2/img/butterfly-readme-screenshots-2.jpg)
