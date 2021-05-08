@@ -18,8 +18,7 @@ menu:
     收藏夹: /favorites/ || fas fa-meteor
   管理||fas fa-cogs:
     更新日志: /changes/ || fas fa-location-arrow
-    谷歌统计: https://analytics.google.com/ || fab fa-google
-    百度统计: https://tongji.baidu.com/ || fas fa-globe-asia
+    站点统计: /statistical/ || fas fa-globe-asia
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
